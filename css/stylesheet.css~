@@ -1,0 +1,19 @@
+html 
+{
+  font-size: 100%;
+}
+
+#todo
+{
+	text-align: center;
+	
+}
+
+p
+{
+	
+}
+h1
+{
+	text-align: center;
+}
