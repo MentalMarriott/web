@@ -1,33 +1,40 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
-		<script src="switch.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/stylesheet.css"></link>
+		<script src="../javascript/switch.js"></script>
 		<title>Homepage</title>
 	</head>
 
 
-	<body onload="resize()">
-		<h1> Welcome to Chris Marriott Website </h1>
+	<body onload="init()">
 
-		<p>This website will be in constant but probably slow development. By the time it is finished it will hopefully contain the following</P>
+<!--		<p>This website will be in constant but probably slow development. By the time it is finished it will hopefully contain the following</P>-->
 		
-		<!--################## Canvas element ############-->
 		<div id="canvasDiv">	
-		<canvas id="myCanvas" >
+			<canvas id="myCanvas">This test is displayed if your browser does not support HTML5 canvas</canvas>
 		</div>
 
 		<div id="todo">	
 		<ul>
-		<li> A breif introduction to the site</li>
-		<li> My CV for potential employers to see and download in pdf or other formats if requested </li>
-		<li> A blog containing information about what im up to</li>
-		<li> A few games the I and others have made </li>
-		<li> A twitter feed of mine </li>
-		<li> Some videos that I find interesting or make </li>
-		<li> Finally any suggestions you make will be taken into account</li>
+			<li> A breif introduction to the site</li>
+			<li> My CV for potential employers to see and download in pdf or other formats if requested </li>
+			<li> A blog containing information about what im up to</li>
+			<li> A few games the I and others have made </li>
+			<li> A twitter feed of mine </li>
+			<li> Some videos that I find interesting or make </li>
+			<li> Finally any suggestions you make will be taken into account</li>
 		</ul>
 		</div>		
+
+		<div id="mousePos"></div>
+
+		<script>
+			var canvas = document.getElementById('myCanvas');
+			var ctx = canvas.getContext('2d');
+			myCanvas.addEventListener('mousemove', mousePos, false);
+		</script>
+
 
 	</body>
 </html>
